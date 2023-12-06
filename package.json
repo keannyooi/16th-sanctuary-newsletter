@@ -1,6 +1,6 @@
 {
   "name": "16th-sanctuary-newsletter",
-  "version": "0.0",
+  "version": "0.0.1",
   "description": "Custom Discord bot made to word around Discord's webhook limit per channel. Used by the 16th Sanctuary discord server for rhythm game news updates.",
   "main": "index.js",
   "scripts": {
