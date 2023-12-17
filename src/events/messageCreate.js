@@ -10,18 +10,23 @@ const inputChannelIds = ["1185798622772744274"];
 module.exports = {
     name: Events.MessageCreate,
     once: false,
-    async execute(message) {
-        if (!inputChannelIds.includes(message.channel.id)) return;
-        if (message.type === 12) return;
+async execute(message) {
+    if (!inputChannelIds.includes(message.channel.id)) return;
+    if (message.type === 12) return;
 
-        const outputChannel = await message.guild.channels.fetch(outputChannelId);
-        const attachments = message.attachments.map(attachment => attachment);
-        console.log(message);
+    const outputChannel = await message.guild.channels.fetch(outputChannelId);
+    const attachments = message.attachments.map(attachment => attachment);
+    console.log(message);
 
-        outputChannel.send({ 
-            // TODO: add randomized funny replacements for "news update from"
-            content: `**[NEWS UPDATE FROM ${message.author.username} ]** \n\n ${message.content}`,
-            files: attachments
-        });
-    }
+    const sentMessage = await outputChannel.send({ 
+        // TODO: add randomized funny replacements for "news update from"
+        content: `**[NEWS UPDATE FROM ${message.author.username} ]** \n\n ${message.content}`,
+        files: attachments
+    });
+
+    // Crosspost the sent message
+    sentMessage.crosspost();
+
+
+}
 };
