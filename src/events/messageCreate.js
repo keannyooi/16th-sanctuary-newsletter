@@ -3,8 +3,14 @@
 const { Events } = require("discord.js");
 
 // prod
- const outputChannelId = "1178390170609918062";
- const inputChannelIds = ["1185454559385100338", "1185454663374471278", "1185454691824435294", "1185838290411200512"];
+const outputChannelId = "1178390170609918062";
+const inputChannelIds = [
+    "1185454559385100338",
+    "1185454663374471278",
+    "1185454691824435294",
+    "1185838290411200512",
+    "1185839033180508180",
+];
 /*
 // test
 const outputChannelId = "1185803977623863356"; 
