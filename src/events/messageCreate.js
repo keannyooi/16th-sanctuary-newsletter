@@ -20,6 +20,21 @@ const inputChannelIds = ["1185798622772744274"];
 
 function getRandomAnnouncement(source) {
     const humor = [
+        // phigros references
+        `${source} is meant to be played, but sometimes it needs helping hands (e.g. reading their news)`,
+        `Have you disabled your ${source} notifications?`,
+        `This is ${source} News!`,
+        `Information matters more than score for the real ${source} player.`,
+        `This ${source} update reminds me of last time when I read a ${source} update`,
+        `Guess how many ${source} updates are literally useful?`,
+        `Fun fact: ${source} updates are ALL useless. (aren't they?)`,
+        `print("${source} update 16.0");`,
+        `Oh, a tip! Oh, it's a ${source} notification...`,
+        `Oh! Let me choose the ${source} update to display for you...`,
+        `Once upon a time, when a player plays ${source}...`,
+        `Play ${source} to relax your fingers and improve brain coordination!`,
+        `Hit me with the HARDCORE ${source} update!!!`,
+        `Funding for this ${source} update was made possible by viewers like you`,
         // eris
         `All My ${source} Fellas!`,
         `Piping hot update from ${source}`,
@@ -27,6 +42,7 @@ function getRandomAnnouncement(source) {
         `Didja hear what happened in ${source}?`,
         `Peep the newness coming from ${source}`,
         `Piping hot update from ${source}`,
+        `I'm reading ${source} news!`,
         // keanny
         `Hear ye, hear ye! News from ${source}`,
         `This just in from ${source}:`,
