@@ -7,26 +7,38 @@ const { Events } = require("discord.js");
 const outputChannelId = "1185803977623863356"; // test-news
 const inputChannelIds = ["1185798622772744274"];
 
+
+function getRandomAnnouncement(source) {
+    const humor = [
+        `All My ${source} Fellas!`,
+        `Piping hot update from ${source}`,
+        `EXTRA EXTRA READ ALL ABOUT ${source}`,
+        `Didja hear what happened in ${source}?`,
+        `Peep the newness coming from ${source}`,
+    ];
+    const randomIndex = Math.floor(Math.random() * humor.length);
+    return humor[randomIndex];
+}
+
 module.exports = {
     name: Events.MessageCreate,
     once: false,
-async execute(message) {
-    if (!inputChannelIds.includes(message.channel.id)) return;
-    if (message.type === 12) return;
+    async execute(message) {
+        if (!inputChannelIds.includes(message.channel.id)) return;
+        if (message.type === 12) return;
 
-    const outputChannel = await message.guild.channels.fetch(outputChannelId);
-    const attachments = message.attachments.map(attachment => attachment);
-    console.log(message);
+        const outputChannel = await message.guild.channels.fetch(outputChannelId);
+        const attachments = message.attachments.map(attachment => attachment);
+        // console.log(message);
 
-    const sentMessage = await outputChannel.send({ 
-        // TODO: add randomized funny replacements for "news update from"
-        content: `**[NEWS UPDATE FROM ${message.author.username} ]** \n\n ${message.content}`,
-        files: attachments
-    });
+        const sentMessage = await outputChannel.send({
+            content: `**[ ${getRandomAnnouncement(message.author.username.replace(/#.*$/, ''))} ]** \n\n ${message.content}`,
+            files: attachments
+        });
 
-    // Crosspost the sent message
-    sentMessage.crosspost();
+        // Crosspost the sent message
+        sentMessage.crosspost();
 
 
-}
+    }
 };
