@@ -2,10 +2,14 @@
 
 const { Events } = require("discord.js");
 
-// const outputChannelId = "1178390170609918062"; rhythm-game-news
-// const inputChannelIds = ["1185454559385100338", "1185454663374471278", "1185454691824435294"];
-const outputChannelId = "1185803977623863356"; // test-news
+// prod
+ const outputChannelId = "1178390170609918062";
+ const inputChannelIds = ["1185454559385100338", "1185454663374471278", "1185454691824435294"];
+/*
+// test
+const outputChannelId = "1185803977623863356"; 
 const inputChannelIds = ["1185798622772744274"];
+*/
 
 
 function getRandomAnnouncement(source) {
