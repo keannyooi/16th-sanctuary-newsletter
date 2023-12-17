@@ -28,7 +28,7 @@ function getRandomAnnouncement(source) {
         `This ${source} update reminds me of last time when I read a ${source} update`,
         `Guess how many ${source} updates are literally useful?`,
         `Fun fact: ${source} updates are ALL useless. (aren't they?)`,
-        `print("${source} update 16.0");`,
+        `print("${source} update 16.sanctuary");`,
         `Oh, a tip! Oh, it's a ${source} notification...`,
         `Oh! Let me choose the ${source} update to display for you...`,
         `Once upon a time, when a player plays ${source}...`,
