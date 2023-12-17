@@ -50,7 +50,6 @@ function getRandomAnnouncement(source) {
         `EXTRA EXTRA READ ALL ABOUT ${source}`,
         `Didja hear what happened in ${source}?`,
         `Peep the newness coming from ${source}`,
-        `Piping hot update from ${source}`,
         `I'm reading ${source} news!`,
         // keanny
         `Hear ye, hear ye! News from ${source}`,
