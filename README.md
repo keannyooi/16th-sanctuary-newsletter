@@ -10,6 +10,9 @@ This Discord bot was made to bypass the 10 webhooks per channel limit. It watche
 
 ## What's New
 
+### v0.0.2
+- Added randomized announcement headers
+
 ### v0.0.1
 
 - Added this release notes section to the `README.md`

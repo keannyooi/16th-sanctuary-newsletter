@@ -56,7 +56,12 @@ function getRandomAnnouncement(source) {
         `This just in from ${source}:`,
         `This is the 16th Sanctuary, bringing in news from ${source}`,
         `News update from ${source}`,
-        `Intel has reported from ${source}`
+        `Intel has reported from ${source}`,
+        `${source} ALERT!`,
+        `I'm sorry for dragging you all the way, I just hope you're interested in ${source}`, // baa-baa-baa-baa
+        `Hello-안녕-salut! Luna Fozer here bringing you an update from ${source}`,
+        `Attention all rhythm gamers, ${source} needs your attention`,
+        `${source}: I'm once again asking for your time and attention` // bernie sanders meme reference
     ];
     const randomIndex = Math.floor(Math.random() * humor.length);
     return humor[randomIndex];
