@@ -27,7 +27,7 @@ function getRandomAnnouncement(source) {
         `Fire burns this ${source} update away, but her chest is leashed again`,
         `Her arms are leashed. With effort, she turns her head to read the latest update from ${source}. Her legs, her feet, her thighs are leashed.`,
         `Her stomach is leashed. Her body burns again, and ${source} news is updated again.`,
-        `These shadows--these memories of ${source} are keeping her trappedc`,
+        `These shadows--these memories of ${source} are keeping her trapped`,
         `${source}... There's some black humor in ${source}.`
         // phigros references
         `${source} is meant to be played, but sometimes it needs helping hands (e.g. reading their news)`,
