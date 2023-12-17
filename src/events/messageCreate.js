@@ -30,6 +30,7 @@ function getRandomAnnouncement(source) {
         `These shadows--these memories of ${source} are keeping her trapped`,
         `${source}... There's some black humor in ${source}.`
         // phigros references
+        `Abracadabra, ${source} news!`,
         `${source} is meant to be played, but sometimes it needs helping hands (e.g. reading their news)`,
         `Have you disabled your ${source} notifications?`,
         `This is ${source} News!`,
@@ -44,6 +45,19 @@ function getRandomAnnouncement(source) {
         `Play ${source} to relax your fingers and improve brain coordination!`,
         `Hit me with the HARDCORE ${source} update!!!`,
         `Funding for this ${source} update was made possible by viewers like you`,
+        // bms references
+        `I'm sorry for dragging you all the way, I just hope you're interested in ${source}...`, // baa-baa-baa-baa
+        `Hello-안녕-salut! Luna Fozer here bringing you an update from ${source}!`,
+        `${source}: 不为所动，做更专业的报道`, // reference to chinese health ad bms made by zris and co. for bof:et
+        `"In a desperate conflict, with a ruthless announcement..." (referring to ${source})`,
+        `${source} information alone is not enough, we also need the meaning of that information.`,
+        `Is it really wrong to like ${source} news?`, // PUPA
+        `LET THE ${source} NEWS KICK!`, //bbkkbkk
+        // takumi3 references
+        `(secret report) Oh, why is ${source} news so pretty?`,
+        `Nice to meet you, ${source} play³r...`,
+        // lanota reference
+        `News of ${source} are on your fingertips.`,
         // eris
         `All My ${source} Fellas!`,
         `Piping hot update from ${source}`,
@@ -52,16 +66,18 @@ function getRandomAnnouncement(source) {
         `Peep the newness coming from ${source}`,
         `I'm reading ${source} news!`,
         // keanny
-        `Hear ye, hear ye! News from ${source}`,
+        `Hear ye, hear ye! News from ${source}!`,
         `This just in from ${source}:`,
-        `This is the 16th Sanctuary, bringing in news from ${source}`,
-        `News update from ${source}`,
-        `Intel has reported from ${source}`,
+        `This is the 16th Sanctuary, bringing in news from ${source}.`,
+        `News update from ${source}:`,
+        `Intel has reported from ${source}:`,
         `${source} ALERT!`,
-        `I'm sorry for dragging you all the way, I just hope you're interested in ${source}`, // baa-baa-baa-baa
-        `Hello-안녕-salut! Luna Fozer here bringing you an update from ${source}`,
-        `Attention all rhythm gamers, ${source} needs your attention`,
-        `${source}: I'm once again asking for your time and attention` // bernie sanders meme reference
+        `Attention all rhythm gamers, ${source} needs your attention.`,
+        `${source}: I'm once again asking for your time and attention.` // bernie sanders meme reference
+        `${source}, you know the drill`,
+        `A reminder that you are not immune to ${source} propaganda.`,
+        `Hello there, ~~General Kenobi~~ ${source} update.`,
+        `Girls are now reporting ${source} news..` // touhou loading screen gag
     ];
     const randomIndex = Math.floor(Math.random() * humor.length);
     return humor[randomIndex];
