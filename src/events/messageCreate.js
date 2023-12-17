@@ -6,9 +6,10 @@ const { Events } = require("discord.js");
 // const webhookIdDictionary = {
 //     "": ""
 // };
-const outputChannelId = "1180735274838397059";
-const inputChannelIds = ["1180735158261915702", "1180735220631228527", "1180735239530754119"];
-// TODO: change these channel ids to the actual channel ids in the server once you're done testing
+// const outputChannelId = "1178390170609918062"; rhythm-game-news
+const outputChannelId = "1185803977623863356"; // test-news
+const inputChannelIds = ["1185798622772744274"];
+// const inputChannelIds = ["1185454559385100338", "1185454663374471278", "1185454691824435294"];
 
 module.exports = {
     name: Events.MessageCreate,
@@ -18,10 +19,12 @@ module.exports = {
 
         const outputChannel = await message.guild.channels.fetch(outputChannelId);
         const attachments = message.attachments.map(attachment => attachment);
+        console.log(message);
 
         // TODO: replace (game) with game name obtained from webhookIdDictionary
-        outputChannel.send({
-            content: `**[NEWS UPDATE FROM (game)]** \n\n ${message.content}`,
+        outputChannel.send({ 
+            // TODO: add randomized funny replacements for "news update from"
+            content: `**[NEWS UPDATE FROM ${message.author.username} ]** \n\n ${message.content}`,
             files: attachments
         });
     }

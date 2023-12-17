@@ -2,6 +2,8 @@
 
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fkeannyooi%2F16th-sanctuary-newsletter%2Fraw%2Fmain%2Fpackage.json&query=%24.version&label=version&labelColor=2d5f99&color=4c9fff)
 
+### How to start
+npm run start
 ## Automatically bringing you live coverage of all your favorite rhythm games, only in the 16th Sanctuary!
 
 This Discord bot was made to bypass the 10 webhooks per channel limit. It watches over a group of channels filled with webhooks and reposts webhook messages sent within those channels.

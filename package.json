@@ -12,6 +12,7 @@
   "author": "keanny_",
   "license": "ISC",
   "dependencies": {
+    "async-eventemitter": "^0.2.4",
     "discord.js": "^14.11.0",
     "dotenv": "^16.3.1"
   }
