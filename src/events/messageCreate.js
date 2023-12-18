@@ -73,7 +73,7 @@ function getRandomAnnouncement(source) {
         `Intel has reported from ${source}:`,
         `${source} ALERT!`,
         `Attention all rhythm gamers, ${source} needs your attention.`,
-        `${source}: I'm once again asking for your time and attention.` // bernie sanders meme reference
+        `${source}: I'm once again asking for your time and attention.`, // bernie sanders meme reference
         `${source}, you know the drill`,
         `A reminder that you are not immune to ${source} propaganda.`,
         `Hello there, ~~General Kenobi~~ ${source} update.`,
