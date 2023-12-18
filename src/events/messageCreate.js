@@ -95,7 +95,7 @@ module.exports = {
         // console.log(message);
 
         const sentMessage = await outputChannel.send({
-            content: `# **[ ${getRandomAnnouncement(message.author.username.replace(/#.*$/, ''))} ]**` + `\n\n ${message.content}`,
+            content: `# **[ ${getRandomAnnouncement(message.author.username.split('#')[0].trim())} ]**` + `\n\n ${message.content}`,
             files: attachments
         });
 
