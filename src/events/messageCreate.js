@@ -57,6 +57,21 @@ function getRandomAnnouncement(source) {
         `${source} information alone is not enough, we also need the meaning of that information.`,
         `Is it really wrong to like ${source} news?`, // PUPA
         `LET THE ${source} NEWS KICK!`, //bbkkbkk
+        // random by sobrem & silentroom references
+        `Lalalala-lala, ${source} is everupdating`,
+        `Here's everything you're looking for, ${source} update!`,
+        `Nothing to care, nothing to lose and ${source} is updating!`,
+        `Play ${source} like you never did before!`,
+        `All the joys and updates you might be wanted to but you never knew that even existed from ${source}`,
+        // monty python references
+        `'It's just a flesh ${source} update...`,
+        `"Someday son, all this will be yours." "What, the ${source} news?"`,
+        `Nobody expects the ${source} Inquisition!`,
+        `“Strange women lying in ponds distributing ${source} news is no basis for a system of government.”`,
+        `“I fart in your general direction. Your mother was a ${source} and your father smelt of updateberries…”`,
+        `“Come and see the violence inherent in ${source}. Help! Help! I’m being updated!”`,
+        `What… is the air-speed velocity of an unladen ${source} update?”`,
+        `“Every update's sacred, every update's great. If a update's wasted, ${source} gets quite irate!”`,
         // takumi3 references
         `(secret report) Oh, why is ${source} news so pretty?`,
         `Nice to meet you, ${source} play³r...`,
