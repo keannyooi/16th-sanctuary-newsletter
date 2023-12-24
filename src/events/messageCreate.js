@@ -49,6 +49,7 @@ function getRandomAnnouncement(source) {
         `There's no mercy in ${source}. People live and people die. That's all there is to it.`,
         `Yo ${source}, still alive?`,
         `"Too bad buddy. This twisted game needs to be reset. We'll start over from 'Zero' with this ${source} update and entrust the future to the next generation`,
+        `I finally found my reason to update. And it doesn't involve you, ${source}`,
         // bms references
         `I'm sorry for dragging you all the way, I just hope you're interested in ${source}...`, // baa-baa-baa-baa
         `Hello-안녕-salut! Luna Fozer here bringing you an update from ${source}!`,
