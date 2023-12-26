@@ -108,19 +108,23 @@ module.exports = {
     name: Events.MessageCreate,
     once: false,
     async execute(message) {
-        if (!inputChannelIds.includes(message.channel.id)) return;
-        if (message.type === 12) return;
+        try {
+            if (!inputChannelIds.includes(message.channel.id)) return;
+            if (message.type === 12) return;
 
-        const outputChannel = await message.guild.channels.fetch(outputChannelId);
-        const attachments = message.attachments.map(attachment => attachment);
-        // console.log(message);
+            const outputChannel = await message.guild.channels.fetch(outputChannelId);
+            const attachments = message.attachments.map(attachment => attachment);
+            // console.log(message);
 
-        const sentMessage = await outputChannel.send({
-            content: `# **[ ${getRandomAnnouncement(message.author.username.split('#')[0].trim())} ]**` + `\n\n ${message.content}`,
-            files: attachments
-        });
+            const sentMessage = await outputChannel.send({
+                content: `# **[ ${getRandomAnnouncement(message.author.username.split('#')[0].trim())} ]**` + `\n\n ${message.content}`,
+                files: attachments
+            });
 
-        // Crosspost the sent message
-        sentMessage.crosspost();
+            // Crosspost the sent message
+            sentMessage.crosspost();
+        } catch (error) {
+            console.log(error);
+        }
     }
 };
