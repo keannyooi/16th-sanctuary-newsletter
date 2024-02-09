@@ -51,6 +51,9 @@ function getRandomAnnouncement(source) {
         `"Too bad buddy. This twisted game needs to be reset. We'll start over from 'Zero' with this ${source} update and entrust the future to the next generation`,
         `I finally found my reason to update. And it doesn't involve you, ${source}`,
         `So, tell me: have you found a reason to update yet?......${source}?`,
+        // Meme References
+        `Oooooo You Like ${source} Ur A ${source} kisser`,
+        `w-where are all the u-updates for ${source}?? i need ${source} updates!`,
         // bms references
         `I'm sorry for dragging you all the way, I just hope you're interested in ${source}...`, // baa-baa-baa-baa
         `Hello-안녕-salut! Luna Fozer here bringing you an update from ${source}!`,
@@ -86,7 +89,7 @@ function getRandomAnnouncement(source) {
         `Didja hear what happened in ${source}?`,
         `Peep the newness coming from ${source}`,
         `I'm reading ${source} news!`,
-        // keanny
+        // regen
         `Hear ye, hear ye! News from ${source}!`,
         `This just in from ${source}:`,
         `This is the 16th Sanctuary, bringing in news from ${source}.`,
