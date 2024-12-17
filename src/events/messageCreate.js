@@ -10,6 +10,7 @@ const inputChannelIds = [
     "1185454691824435294",
     "1185838290411200512",
     "1185839033180508180",
+    "1318417072270606417",
 ];
 /*
 // test
@@ -63,11 +64,14 @@ function getRandomAnnouncement(source) {
         `Is it really wrong to like ${source} news?`, // PUPA
         `LET THE ${source} NEWS KICK!`, //bbkkbkk
         // random by sobrem & silentroom references
-        `Lalalala-lala, ${source} is everupdating`,
+        `Lalalalala~la, ${source} is everupdating`,
         `Here's everything you're looking for, ${source} update!`,
         `Nothing to care, nothing to lose and ${source} is updating!`,
         `Play ${source} like you never did before!`,
         `All the joys and updates you might be wanted to but you never knew that even existed from ${source}`,
+        // Minecraft References
+        `Removed Herobrine from ${source}`,
+        `Did you hear about the guy who saw the new ${source} update?  He was destroyed!`,
         // monty python references
         `'It's just a flesh ${source} update...`,
         `"Someday son, all this will be yours." "What, the ${source} news?"`,
