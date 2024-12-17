@@ -105,7 +105,9 @@ function getRandomAnnouncement(source) {
         `${source}, you know the drill`,
         `A reminder that you are not immune to ${source} propaganda.`,
         `Hello there, ~~General Kenobi~~ ${source} update.`,
-        `Girls are now reporting ${source} news..` // touhou loading screen gag
+        `Girls are now reporting ${source} news..`, // touhou loading screen gag
+        // yuh
+        `So true ${source} bestie`
     ];
     const randomIndex = Math.floor(Math.random() * humor.length);
     return humor[randomIndex];
